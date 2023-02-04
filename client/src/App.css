@@ -1,0 +1,14 @@
+.title {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #5f6265;
+  background-color: #a8d2f5;
+  min-width: 80px;
+  min-height: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
