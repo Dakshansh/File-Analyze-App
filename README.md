@@ -1,4 +1,4 @@
-                                                             FILE UPLOAD
+                                                        FILE UPLOAD
 
 This is an example of uploading a text file using the nodejs express server, processing it for extracting different parts of speech and returning it to react js frontend.
 This is a very basic example of the above mentioned use case. No styling for asthetics has been concentrated on. Main purpose of this demo is to show the functionality and
