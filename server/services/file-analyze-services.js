@@ -15,7 +15,6 @@ module.exports = class FileAnalyzerServices {
     let adjectiveCount = 0;
     let verbCount = 0;
     let restofWordsCount = 0;
-
     for await (let sentence of sentences) {
       const posResult = await wordposInstance.getPOS(sentence, async (result) => {
         return result;
@@ -43,6 +42,7 @@ module.exports = class FileAnalyzerServices {
       }
     }
     const totalCount = nounCount + verbCount + adjectiveCount + adverbCount;
+    console.log(nounCount, verbCount, adjectiveCount, adverbCount);
     const nounPercentage = (nounCount / totalCount) * 100;
     const verbPercentage = (verbCount / totalCount) * 100;
     const adjectivePercentage = (adjectiveCount / totalCount) * 100;

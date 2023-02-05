@@ -3,7 +3,8 @@ const router = express.Router();
 const multer = require("multer");
 const fileRouterController = require("../controllers/file-analyze-controller");
 
-const upload = multer({ dest: "uploads/" });
+const maxSize = 7 * 1024 * 1024;
+const upload = multer({ dest: "uploads/", limits: { fieldSize: maxSize } });
 
 // let filestorageEngine = multer.diskStorage({
 //   destination: (req, file, cb) => {
